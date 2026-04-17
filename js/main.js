@@ -60,3 +60,22 @@ const observer1 = new IntersectionObserver((entries) => {
 document.querySelectorAll(".counter__item .numberAnimate").forEach((el) => {
     observer1.observe(el);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menu_btn = document.querySelector('.btn__menu');
+    const menu = document.querySelector('.menu');
+    const bb = document.querySelector('body');
+    const hh = document.querySelector('html');
+    const overlay = document.querySelector('.overlay');
+    menu_btn.addEventListener('click', function (){
+        menu.classList.toggle('show');
+        menu_btn.classList.toggle('active');
+        overlay.classList.toggle('show');
+        bb.classList.toggle('no-scroll');
+        hh.classList.toggle('no-scroll');
+    })
+
+    const im = new Inputmask("+7 (999) 999 99 99");
+    im.mask(document.getElementById("phone"));
+});

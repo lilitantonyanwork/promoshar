@@ -4,8 +4,14 @@ body {
     background: #FBFBFB;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
-
+body.no-scroll, html.no-scroll{
+    overflow: hidden;
+}
+section {
+    overflow: hidden;
+}
  * {
     box-sizing: border-box;
     margin: 0;
@@ -130,6 +136,7 @@ header{
 }
 .banner{
     padding-top: 60px;
+    padding-bottom: 30px;
 }
 .banner__title{
     font-weight: 500;
@@ -292,7 +299,7 @@ header{
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 .counter__content{
-    margin-top: 75px;
+    margin-top: 45px;
     width: 100%;
     gap: 80px;
     background: rgba(255, 255, 255, 0.8999999761581421);
@@ -326,9 +333,11 @@ header{
     align-items: center;
     gap: 3px;
 }
+.counter{
+    padding-bottom: 80px;
+}
 .client__list{
     gap: 80px;
-    margin-top: 80px;
 }
 .client__item{
     opacity: 0;
@@ -471,8 +480,12 @@ header{
 .contact__left p span{
     color: #A7CA44;
 }
+.features{
+    padding-bottom: 17px;
+}
 .contacts{
-    margin-top: 117px;
+    margin-top: 100px;
+    padding-bottom: 64px;
 }
 .contact__left{
     padding: 68px 80px 98px 61px;
@@ -600,6 +613,7 @@ header{
     opacity: 0;
     transition: 2000ms;
     transform: translateX(100px);
+    max-width: calc(100% - 929px);
 }
 .contact__right.active{
     opacity: 1;
@@ -618,7 +632,7 @@ header{
     left: -75px;
 }
 .map{
-    margin-top: 64px;
+
     margin-bottom: 51px;
 }
 footer{
@@ -658,6 +672,9 @@ footer{
     color: #ffffff;
 
 }
+html, body {
+    overflow-x: hidden;
+}
 .footer__logo{
     gap: 23px;
     font-weight: 600;
@@ -674,4 +691,23 @@ footer{
     text-align: center;
     color: #ffffff;
     margin-top: 43px;
+}
+
+.btn__menu{
+    display: none;
+}
+
+.fade{
+    will-change: transform;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+.overlay.show{
+    display: block;
 }
