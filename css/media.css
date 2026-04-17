@@ -610,6 +610,15 @@
     .feature__info {
         width: calc(100% - 60px);
     }
+    .footer__contacts--item:first-child{
+        text-indent: 1px;
+        font-size: 10px;
+        width: fit-content;
+        gap: 6px;
+    }
+    .footer__contacts--item:first-child svg{
+        width: 23px;
+    }
 }
 @media screen and (max-width: 480px){
     .section__title{
