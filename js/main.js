@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function init() {
         const map = new ymaps.Map("map", {
             center: [55.577514, 37.623691], // координаты
-            zoom: 12,
+            zoom: 14,
             controls: []
         });
 

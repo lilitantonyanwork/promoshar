@@ -294,6 +294,9 @@
     .footer__logo img{
         width: 60px;
     }
+    .map{
+        height: 500px!important;
+    }
 }
 @media screen and (max-width: 990px){
 
@@ -479,6 +482,28 @@
         top: 100px;
     }
 
+    .title-h2{
+        font-size: 18px;
+    }
+    .contact__info{
+        margin-bottom: 15px;
+    }
+    .contact__info:last-child{
+        margin-bottom: 0;
+    }
+    .contact__info a, .contact__info{
+        font-size: 12px;
+    }
+    .contact__info img{
+        width: 18px;
+        height: 18px;
+    }
+    .contact__block{
+        width: 275px;
+        padding: 20px;
+        right: 40px;
+    }
+
 }
 @media screen and (max-width: 600px){
     header{
@@ -618,6 +643,29 @@
     }
     .footer__contacts--item:first-child svg{
         width: 23px;
+    }
+    .map{
+        height: 200px!important;
+    }
+    .contact__block{
+        width: 230px;
+        padding: 10px;
+        right: 40px;
+        border-radius: 10px;
+    }
+    .title-h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .contact__info{
+        margin-bottom: 5px;
+    }
+    .contact__info a, .contact__info {
+        font-size: 10px;
+    }
+    .contact__info img {
+        width: 10px;
+        height: 10px;
     }
 }
 @media screen and (max-width: 480px){
