@@ -85,12 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function init() {
         const map = new ymaps.Map("map", {
             center: [55.577514, 37.623691], // координаты
-            zoom: 15,
+            zoom: 12,
             controls: []
         });
 
         const placemark = new ymaps.Placemark(
-            [55.644, 37.623],
+            [55.577514, 37.623691],
             {},
             {
                 iconLayout: "default#image",
