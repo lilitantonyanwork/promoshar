@@ -779,7 +779,7 @@ html, body {
     white-space: nowrap;
     width: max-content;
     color: #000;
-    transform: translate(53px, 25px);
+    transform: translate(53px, 5px);
 }
 
 .map-overlay {
