@@ -78,4 +78,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const im = new Inputmask("+7 (999) 999 99 99");
     im.mask(document.getElementById("phone"));
+
+
+    ymaps.ready(init);
+
+    function init() {
+        const map = new ymaps.Map("map", {
+            center: [55.644, 37.623], // координаты
+            zoom: 15,
+            controls: []
+        });
+
+        const placemark = new ymaps.Placemark(
+            [55.644, 37.623],
+            {},
+            {
+                iconLayout: "default#image",
+                iconImageHref: "/images/pin.svg", // твой пин
+                iconImageSize: [40, 40],
+                iconImageOffset: [-20, -40]
+            }
+        );
+
+        map.geoObjects.add(placemark);
+    }
 });

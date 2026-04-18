@@ -711,3 +711,47 @@ html, body {
 .overlay.show{
     display: block;
 }
+#map {
+    filter: grayscale(1) brightness(0.9);
+}
+.map{
+    position: relative;
+    height: 784px;
+}
+.contact__block {
+    box-shadow: rgba(67, 67, 67, 0.1) 0px 0px 10px 0px;
+    width: 365px;
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    transform: translate(0%, -50%);
+    z-index: 10;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 30px;
+    transition: 1000ms;
+}
+.contact__block.active{
+    opacity: 1;
+}
+ .title-h2 {
+    font-size: 27px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.contact__info {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #2d2d2d;
+
+}
+.contact__info a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2d2d2d;
+}
