@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // ✅ добавляем вручную
         map.controls.add(zoomControl);
 
+
         // КАСТОМНЫЙ БАЛЛУН
         const BalloonLayout = ymaps.templateLayoutFactory.createClass(
             `
@@ -138,5 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         map.geoObjects.add(placemark);
+        // 🔥 фикс: убираем фильтр с пинов
+
     }
 });
