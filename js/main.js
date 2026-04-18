@@ -105,13 +105,31 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+
+
         // ✅ добавляем вручную
         map.controls.add(zoomControl);
 
+        // КАСТОМНЫЙ БАЛЛУН
+        const BalloonLayout = ymaps.templateLayoutFactory.createClass(
+            `
+        <div class="custom-balloon">
+          
+            <div class="balloon-text">г. Москва, Востряковский проезд 10Б стр7</div>
+            
+        </div>
+        `
+        );
+
+
         const placemark = new ymaps.Placemark(
             [55.577514, 37.623691],
-            {},
             {
+                balloonContent: 'custom'
+            },
+            {   balloonLayout: BalloonLayout,
+                balloonShadow: false,
+                hideIconOnBalloonOpen: false,
                 iconLayout: "default#image",
                 iconImageHref: "images/local-icon.svg", // твой пин
                 iconImageSize: [40, 40],
