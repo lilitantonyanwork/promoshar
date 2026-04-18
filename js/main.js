@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function init() {
         const map = new ymaps.Map("map", {
-            center: [55.644, 37.623], // координаты
+            center: [55.577514, 37.623691], // координаты
             zoom: 15,
             controls: []
         });
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
             {},
             {
                 iconLayout: "default#image",
-                iconImageHref: "../images/local-icon.svg", // твой пин
+                iconImageHref: "/images/local-icon.svg", // твой пин
                 iconImageSize: [40, 40],
                 iconImageOffset: [-20, -40]
             }
