@@ -755,3 +755,20 @@ html, body {
     gap: 10px;
     color: #2d2d2d;
 }
+/* контейнер кнопок */
+.ymaps-2-1-79-zoom {
+    background: #fff !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    opacity: 1;
+}
+
+/* сами кнопки */
+.ymaps-2-1-79-zoom__button {
+    background: #fff !important;
+}
+
+/* hover эффект */
+.ymaps-2-1-79-zoom__button:hover {
+    background: #f5f5f5 !important;
+}

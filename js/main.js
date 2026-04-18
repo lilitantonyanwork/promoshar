@@ -85,9 +85,28 @@ document.addEventListener("DOMContentLoaded", function () {
     function init() {
         const map = new ymaps.Map("map", {
             center: [55.577514, 37.623691], // координаты
-            zoom: 14,
+            zoom: 12,
             controls: []
         });
+
+        map.behaviors.disable("scrollZoom");
+
+
+
+        // ➕➖ создаём контрол
+        const zoomControl = new ymaps.control.ZoomControl({
+            options: {
+                size: "small",
+
+                position: {
+                    right: 20,
+                    top: 300
+                }
+            }
+        });
+
+        // ✅ добавляем вручную
+        map.controls.add(zoomControl);
 
         const placemark = new ymaps.Placemark(
             [55.577514, 37.623691],
