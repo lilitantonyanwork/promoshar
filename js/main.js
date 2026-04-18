@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
             {},
             {
                 iconLayout: "default#image",
-                iconImageHref: "/images/local-icon.svg", // твой пин
+                iconImageHref: "/promoshar/images/local-icon.svg", // твой пин
                 iconImageSize: [40, 40],
                 iconImageOffset: [-20, -40]
             }
